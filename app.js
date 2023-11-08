@@ -44,7 +44,7 @@ function ready(){
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
     alert("Gracias por la compra");
-    //Elimino todos los elmentos del carrito
+    //Elimino todos los elmentos del carrito<
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
         carritoItems.removeChild(carritoItems.firstChild)
@@ -201,9 +201,9 @@ function actualizarTotalCarrito(){
 
 // Datos de ejemplo de productos
 const productos = [
-    { nombre: "Tomate", imagen: "/img/tomate-eco.jpg",descripcion: "Es Un Prroducto Muy Demandado y uno de los mas comprados", precio: "$19.99" },
-    { nombre: "Choclo", imagen: "/img/choclo-eco.webp",descripcion: "Es Un Prroducto Muy Demandado y uno de los mas comprados", precio: "$24.99" },
-    { nombre: "Lechuga", imagen: "/img/lechuga-eco.jpg",descripcion: "Es Un Prroducto Muy Demandado y uno de los mas comprados", precio: "$14.99" },
+    { nombre: "Tomate", imagen: "./img/tomate-eco.jpg",descripcion: "Es Un Prroducto Muy Demandado y uno de los mas comprados", precio: "$19.99" },
+    { nombre: "Choclo", imagen: "./img/choclo-eco.webp",descripcion: "Es Un Prroducto Muy Demandado y uno de los mas comprados", precio: "$24.99" },
+    { nombre: "Lechuga", imagen: "./img/lechuga-eco.jpg",descripcion: "Es Un Prroducto Muy Demandado y uno de los mas comprados", precio: "$14.99" },
     // ... más productos
 ];
 
