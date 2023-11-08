@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image.jpg" href="/img/icon-eco.png">
+    <script defer src="app.js" async></script>
+    <title>Tienda de Productos Ecologicos</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Tienda de producto Ecologicos</h1>
+    </header>
+    <section class="productos">
+        <h2>Productos Populares</h2>
+        <div class="productos-container" id="productos-container">
+            <!-- Aquí se cargarán dinámicamente los productos -->
+        </div>
+    </section>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Yuca</span>
+                <img src="/img/yuca-eco.jpg" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Zanahoria</span>
+                <img src="/img/zanoria-eco.jpg" alt="" class="img-item">
+                <span class="precio-item">$25.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Tomate</span>
+                <img src="/img/tomate-eco.jpg" alt="" class="img-item">
+                <span class="precio-item">$35.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lechuga</span>
+                <img src="/img/lechuga-eco.jpg" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Veterraga</span>
+                <img src="/img/veterraga-eco.jpg" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Choclo</span>
+                <img src="/img/choclo-eco.webp" alt="" class="img-item">
+                <span class="precio-item">$18.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Papa</span>
+                <img src="/img/papa-eco.jpg" alt="" class="img-item">
+                <span class="precio-item">$54.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pepino</span>
+                <img src="/img/pepino-eco.webp" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Veterraga</span>
+                <img src="/img/veterraga-eco.jpg" alt="" class="img-item">
+                <span class="precio-item">$42.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+    <form onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="dni">Número de DNI:</label>
+        <input type="text" id="dni" required><br><br>
+
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required><br><br>
+
+        <label for="codigoPostal">Código postal:</label>
+        <input type="text" id="codigoPostal" required><br><br>
+
+        <label for="comentario">Comentario (máx. 100 caracteres):</label>
+        <input type="text" id="comentario" maxlength="100"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        function validarFormulario() {
+            // Obtener valores de los campos
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var dni = document.getElementById('dni').value;
+            var fechaNacimiento = document.getElementById('fechaNacimiento').value;
+            var codigoPostal = document.getElementById('codigoPostal').value;
+            var comentario = document.getElementById('comentario').value;
+
+            // Validar el comentario
+            if (comentario.length > 100) {
+                alert('El comentario debe tener máximo 100 caracteres.');
+                return false;
+            }
+
+            // Otros posibles controles y validaciones aquí...
+
+            // Si todo está correcto, el formulario se envía
+            return true;
+        }
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
